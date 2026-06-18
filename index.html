@@ -1,1 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroVerde - Sustentabilidade no Agronegócio</title>
 
+<link rel="stylesheet" href="style.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:#2e7d32;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:10px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:#4caf50;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+section{
+    padding:70px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#2e7d32;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.contato{
+    background:#e8f5e9;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2rem;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">🌱 AgroVerde</div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#producao">Produção</a></li>
+            <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+            <li><a href="#desafios">Desafios</a></li>
+            <li><a href="#futuro">Futuro</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Produzir Hoje, Preservar o Amanhã</h1>
+        <p>Tecnologia, inovação e sustentabilidade transformando o agronegócio.</p>
+        <a href="#producao" class="btn">Saiba Mais</a>
+    </div>
+</section>
+
+<section id="introducao">
+    <h2>Sobre o Projeto</h2>
+
+    <p>
+        O agronegócio é um dos principais pilares da economia brasileira.
+        Além de gerar empregos e alimentos para milhões de pessoas,
+        o setor também enfrenta desafios relacionados à preservação ambiental.
+        Este site apresenta a importância da produção agrícola,
+        tecnologias sustentáveis e soluções para um futuro mais equilibrado.
+    </p>
+</section>
+
+<section id="producao">
+    <h2>Produção Agrícola</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Economia</h3>
+            <p>
+                O agronegócio possui grande participação no PIB brasileiro
+                e fortalece as exportações.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Alimentação Mundial</h3>
+            <p>
+                Responsável pelo abastecimento interno e pela exportação
+                de alimentos para diversos países.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Tecnologia</h3>
+            <p>
+                Máquinas modernas, sensores e softwares aumentam
+                a produtividade das lavouras.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="sustentabilidade">
+    <h2>Sustentabilidade no Campo</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🌾 Agricultura de Precisão</h3>
+            <p>
+                Uso de GPS, sensores e dados para reduzir desperdícios
+                e melhorar a produção.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Irrigação Inteligente</h3>
+            <p>
+                Economia de água através do monitoramento da umidade do solo.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>☀ Energia Renovável</h3>
+            <p>
+                Uso de energia solar, biomassa e energia eólica
+                para reduzir impactos ambientais.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🚁 Drones Agrícolas</h3>
+            <p>
+                Monitoramento de lavouras e pulverização localizada
+                com maior eficiência.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="desafios">
+    <h2>Desafios Ambientais</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🌳 Desmatamento</h3>
+            <p>
+                Pode causar perda da biodiversidade e desequilíbrios climáticos.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💦 Uso Excessivo da Água</h3>
+            <p>
+                O desperdício contribui para a escassez hídrica.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌍 Emissão de Carbono</h3>
+            <p>
+                Máquinas agrícolas e queimadas aumentam os gases de efeito estufa.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="futuro">
+    <h2>Soluções e Futuro</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>♻ Agricultura Regenerativa</h3>
+            <p>
+                Recuperação do solo e aumento da biodiversidade.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🤖 Inteligência Artificial</h3>
+            <p>
+                Análise de dados para tomadas de decisão mais eficientes.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Reflorestamento</h3>
+            <p>
+                Conservação dos recursos naturais e proteção ambiental.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📡 Sensores Inteligentes</h3>
+            <p>
+                Monitoramento em tempo real das condições do campo.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="contato" id="contato">
+    <h2>Contato e Conscientização</h2>
+
+    <form>
+        <input type="text" placeholder="Seu nome" required>
+
+        <input type="email" placeholder="Seu e-mail" required>
+
+        <textarea rows="5" placeholder="Sua mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <p style="text-align:center;">
+        Pequenas ações no presente podem garantir um futuro sustentável
+        para as próximas gerações.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 AgroVerde | Tecnologia e Sustentabilidade no Agronegócio</p>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e){
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href'))
+        .scrollIntoView({
+            behavior:'smooth'
+        });
+    });
+});
+</script>
+
+</body>
+</html>
